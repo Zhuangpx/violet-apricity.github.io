@@ -1,0 +1,541 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+  <title>Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-04-14 19:37" pubdate>
+        2021年4月14日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      26
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <p>title: 如何使用Hexo搭建一个自己的静态博客<br>date: 2021-04-14 19:37:58<br>tags:</p>
+<ul>
+<li>博客搭建</li>
+<li>hexo</li>
+<li>fluid<br>declare: true</li>
+</ul>
+<h1 id="如何使用Hexo搭建一个静态博客"><a href="#如何使用Hexo搭建一个静态博客" class="headerlink" title="如何使用Hexo搭建一个静态博客"></a>如何使用Hexo搭建一个静态博客</h1><h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>hexo官网在这里：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo</a></p>
+<p>hexo是一款简洁快速的博客框架，可以使用Makedown（或其他渲染引擎）解析文章。</p>
+<p>大一下，为了记录技术文章和刷题补题记录（还有其它乱七八糟的东西），我出生了搭建博客的想法，由于对各大博客框架不了解，选择了一位本校师兄推荐的hexo，在这里记录一下博客搭建的过程和遇到的一些问题。写此博客时参考了其它博客和视频，将会在文章末尾列出。</p>
+<p>本博客使用<strong>hexo框架</strong>，通过Git Pages服务部署在了<strong>github/gitee</strong>上，本人使用的是windows系统，不同系统差异应该也不大。（并不清楚）</p>
+<h2 id="安装前提："><a href="#安装前提：" class="headerlink" title="安装前提："></a>安装前提：</h2><p>需要以下两款程序：</p>
+<p><a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a></p>
+<p><a target="_blank" rel="noopener" href="http://git-scm.com/">Git</a></p>
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a><a target="_blank" rel="noopener" href="http://git-scm.com/">Git</a></h3><h4 id="安装注意事项："><a href="#安装注意事项：" class="headerlink" title="安装注意事项："></a>安装注意事项：</h4><p>（以下大部分为某位师兄的博客总结，由于写的很好并且个人不是很懂这些，当初也是他教我的，所以授权后引用了。）</p>
+<p>跟Node.js一样，git也是直接去<a target="_blank" rel="noopener" href="https://git-scm.com/">官网</a>下载对应的64位或32位安装包双击即可。git在安装过程中的选项比较多，这里说一下每个选项大概的意思。</p>
+<p><img src="https://luhawxem.gitee.io/2021/01/22/MyFirstBlogArticle/GitSetup_1.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>这里的选项基本上不用动，用默认就行。</p>
+<p><img src="https://luhawxem.gitee.io/2021/01/22/MyFirstBlogArticle/GitSetup_2.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>这里是选择<code>.git</code>文件的默认编辑器，推荐<code>Nano</code>、<code>Vim</code>，个人喜欢用VSCode。</p>
+<p><img src="https://luhawxem.gitee.io/2021/01/22/MyFirstBlogArticle/GitSetup_3.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>设置初始化时的主分支名，一般用默认。</p>
+<p><img src="https://luhawxem.gitee.io/2021/01/22/MyFirstBlogArticle/GitSetup_4.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>这里是选择将哪些工具添加到系统的环境变量<code>PATH</code>中。第一个是全部不添加，只能在Git Bash中使用git命令。第二个是仅添加git，不添加git附带的命令行工具(如<code>Nano</code>、<code>Vim</code>这些)。第三个则是将全部工具添加到环境变量中。</p>
+<p><img src="https://luhawxem.gitee.io/2021/01/22/MyFirstBlogArticle/GitSetup_5.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>选择TLS库。第一个选择的是git自带的TLS库，第二个选的是Windows自带的TLS库。这两个库的差别主要在根证书上，选OpenSSL会使用Git带的根证书，选后者会用系统的根证书。</p>
+<p><img src="https://luhawxem.gitee.io/2021/01/22/MyFirstBlogArticle/GitSetup_6.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>选择是否自动转换仓库中文件的换行符，此处选择中间项，提交时会自动转化成LF。有关LF、CR、CRLF可以自行百度。</p>
+<p><img src="https://luhawxem.gitee.io/2021/01/22/MyFirstBlogArticle/GitSetup_7.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>选择Git Bash使用什么终端，建议选MinTTY。</p>
+<p><img src="https://luhawxem.gitee.io/2021/01/22/MyFirstBlogArticle/GitSetup_8.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>选择<code>git pull</code>命令的默认行为。选第一个或者最后一个，在实际使用中最好避免使用<code>git pull</code>改为手动<code>git fetch</code>然后再<code>git merge</code>，具体命令的作用可以直接百度或者参见<a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-tutorial.html">菜鸟教程</a>。</p>
+<p><img src="https://luhawxem.gitee.io/2021/01/22/MyFirstBlogArticle/GitSetup_9.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>选择git的凭据管理器(类似浏览器的密码管理器)，个人选择第一个。如果没有这个功能，每次提交都需要手动输入密码，git本身没有凭据储存的功能。</p>
+<p><img src="https://luhawxem.gitee.io/2021/01/22/MyFirstBlogArticle/GitSetup_10.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>缓存和符号链接文件相关。</p>
+<p><img src="https://luhawxem.gitee.io/2021/01/22/MyFirstBlogArticle/GitSetup_11.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>是否允许在Git Bash中使用Python或NodeJs等外部命令。</p>
+<h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a><a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a></h3><p>Node.js 为大多数平台提供了官方的 <a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">安装程序</a>。对于中国大陆地区用户，可以前往 <a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/node">淘宝 Node.js 镜像</a> 下载。</p>
+<p>其它的安装方法：</p>
+<ul>
+<li>Windows：通过 <a target="_blank" rel="noopener" href="https://github.com/jasongin/nvs/">nvs</a>（推荐）或者<a target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</li>
+<li>Mac：使用 <a target="_blank" rel="noopener" href="https://brew.sh/">Homebrew</a> 或 <a target="_blank" rel="noopener" href="http://www.macports.org/">MacPorts</a> 安装。</li>
+<li>Linux（DEB/RPM-based）：从 <a target="_blank" rel="noopener" href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</li>
+<li>其它：使用相应的软件包管理器进行安装，可以参考由 Node.js 提供的 <a target="_blank" rel="noopener" href="https://nodejs.org/en/download/package-manager/">指导</a></li>
+</ul>
+<p>对于 Mac 和 Linux 同样建议使用 nvs 或者 nvm，以避免可能会出现的权限问题。</p>
+<h4 id="配置环境变量："><a href="#配置环境变量：" class="headerlink" title="配置环境变量："></a>配置环境变量：</h4><p>对于环境变量和path相关知识可以参考百度或者<a target="_blank" rel="noopener" href="https://blog.csdn.net/Pre_waist_L/article/details/79696507">这篇博客。</a></p>
+<p>下面说说配置步骤：</p>
+<ul>
+<li>右击<strong>我的电脑</strong>，打开<strong>高级系统设置</strong>。</li>
+</ul>
+<p><img src="C:\Users\pengxin\AppData\Roaming\Typora\typora-user-images\image-20210414200454140.png" srcset="/img/loading.gif" lazyload alt="image-20210414200454140"></p>
+<p>​        <img src="C:\Users\pengxin\AppData\Roaming\Typora\typora-user-images\image-20210414200606799.png" srcset="/img/loading.gif" lazyload alt="image-20210414200606799"></p>
+<ul>
+<li><p>打开<strong>环境变量</strong>，在<strong>path</strong>下<strong>编辑</strong>。</p>
+<p><img src="C:\Users\pengxin\AppData\Roaming\Typora\typora-user-images\image-20210414200836054.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+<li><p>选择<strong>新建</strong>，加入Node.js安装时的路径。</p>
+<p><img src="C:\Users\pengxin\AppData\Roaming\Typora\typora-user-images\image-20210414201018998.png" srcset="/img/loading.gif" lazyload alt="image-20210414201018998"></p>
+</li>
+</ul>
+<h4 id="可选操作"><a href="#可选操作" class="headerlink" title="可选操作:"></a>可选操作:</h4><ul>
+<li><p>由于由于Node.js自带的包管理器<code>npm</code>在进行全局安装时会默认安装到C盘，为了减轻C盘的存储空间负担可以将全局安装文件夹的默认路径修改到其他盘符。在管理员模式的cmd窗口下(按win键直接敲cmd搜索或者win键+R输入cmd)执行：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c++">#这里我将默认路径改到我的Node.js的安装路径下,也可以选择直接安装到D盘根路径下等等<br>npm config set prefix <span class="hljs-string">&quot;D:\NodeJS\node_global&quot;</span> <br>npm config set cache <span class="hljs-string">&quot;D:\NodeJS\node_cache&quot;</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<p>​       执行完成后，再去系统属性中配置一下环境变量。将<code>D:\NodeJS\node_global</code>    添加到<code>Path</code>中。</p>
+<ul>
+<li><p>由于国内直接使用<code>npm</code>的官方镜像比较慢，所以一般我们安装完<code>Node.js</code>之后都会配置一个淘宝的<code>cnpm</code>镜像源用来代替<code>npm</code>官方的镜像源。淘宝这个镜像源更新还是比较快的，一般不会出现版本不一样的问题。直接在cmd窗口中执行：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c++">npm install -g cnpm --registry=https:<span class="hljs-comment">//registry.npm.taobao.org</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<p>​      完成之后就可以通过<code>cnpm install</code>来安装模块了，速度会快很多。</p>
+<h4 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h4><p><strong>Windows 用户</strong></p>
+<ul>
+<li>使用 Node.js 官方安装程序时，请确保勾选 <strong>Add to PATH</strong> 选项（默认已勾选）</li>
+</ul>
+<p><strong>For Mac / Linux 用户</strong></p>
+<ul>
+<li>如果在尝试安装 Hexo 的过程中出现 <code>EACCES</code> 权限错误，请遵循 <a target="_blank" rel="noopener" href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally">由 npmjs 发布的指导</a> 修复该问题。强烈建议 <strong>不要</strong> 使用 root、sudo 等方法覆盖权限</li>
+</ul>
+<p><strong>Linux</strong></p>
+<ul>
+<li>If you installed Node.js using Snap, you may need to manually run <code>npm install</code> in the target folder when <a target="_blank" rel="noopener" href="https://hexo.io/docs/commands#init">initializing</a> a blog.</li>
+</ul>
+<h3 id="配置："><a href="#配置：" class="headerlink" title="配置："></a>配置：</h3><p>注册好一个<a target="_blank" rel="noopener" href="https://github.com/">github</a>或<a target="_blank" rel="noopener" href="https://gitee.com/">gitee</a>的账号，只会打开Git Bash终端对git账号绑定（配置）。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c++">#配置用户名，此处<span class="hljs-string">&quot;username&quot;</span>是自己的账户名<br>git config --global user.name <span class="hljs-string">&quot;username&quot;</span><br>#配置邮箱，<span class="hljs-string">&quot;username@email.com&quot;</span>是注册时所用的邮箱，<br>git config --global user.email <span class="hljs-string">&quot;username@email.com&quot;</span><br>#执行完成后可用以下命令查看配置<br>git config --global --list<br></code></pre></td></tr></table></figure>
+
+<p>之后可以选择生成SSH公钥，输入：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c++">ssh-keygen -t rsa<br></code></pre></td></tr></table></figure>
+
+<p>之后三次回车默认选项yes。之后去<code>C:\Users\用户名\.ssh</code>文件夹中将<code>id_rsa.pub</code>文件中的内容复制出来。去github或者gitee的设置中找到SSH这一项，将复制的内容粘贴到Key中保存配置。这里是设置与git仓库以SSH的方式通信，只能在你是仓库所有人的情况下才能使用，在参与多人协作时非仓库所有者仅能通过HTTPS方式进行通信。</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>hexo框架的安装同NodeJs及其包管理器npm与镜像源cnpm，可以通过Windows自带的cmd或者git所带的Git Bash执行以下命令全局安装hexo框架：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c++">cnpm install -g hexo-cli<br></code></pre></td></tr></table></figure>
+
+<p>安装完成之后，我们就可以在本地生成自己的博客了。新建一个文件夹如myblog，进去之后右键在此处打开Git Bash。</p>
+<ul>
+<li><code>hexo init</code>：初始化一个博客。</li>
+<li><code>hexo server</code>：在本地(localhost:4000)启动当前博客。</li>
+<li><code>hexo new &quot;文章标题&quot;</code>：创建一篇新文章(markdown格式)</li>
+<li><code>hexo clean</code>：清除生成的临时文件</li>
+<li><code>hexo generate</code>：重新生成(每次对博客进行改动都需要清除之后再重新生成)</li>
+</ul>
+<p>这样，一个hexo博客就已经搭建完成了，但是博客不可能只是在本地使用，所以这里使用github或者gitee的git page项目来部署我们的博客。在此之前需要安装一个自动将hexo博客部署到git上的工具。执行命令<code>cnpm install --save hexo-deployer-git</code>安装。</p>
+<p>之后在github或者gitee中新建一个仓库，仓库名为**<a target="_blank" rel="noopener" href="http://github用户名.github.io/">github用户名.github.io</a>**，gitee则是直接以用户名为仓库名和仓库路径。这个仓库名不能随便起，只能按照这个要求，否则无法直接通过<code>https://github用户名.github.io</code>访问到博客页面(gitee的仓库路径需要手动改成用户名，否则则会以分级目录访问，同时gitee仓库需要在服务中手动开启Git Page服务，且每次提交后需要手动重新部署)。</p>
+<p>创建完成后将SSH中的链接复制一下，打开你的博客根文件夹下的_config.yml文件。在最底部找到这一段，填入对应的参数即可，注意<strong>冒号之后均有空格且不可省略</strong>。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c++"># Deployment<br>## Docs: https:<span class="hljs-comment">//hexo.io/docs/deployment.html</span><br>deploy:<br>  type: git #填入git<br>  repo: 刚刚复制的链接 #填入仓库链接<br>  branch: master #这个可以不填，git仓库默认也是master<br></code></pre></td></tr></table></figure>
+
+<p>保存退出后我们可以直接通过<code>hexo deploy</code>命令将生成的静态文件部署到git仓库，之后就可以通过<code>https://github用户名.github.io</code>直接访问我们的个人博客了。部署在github上的话可能国内连接速度有点慢，gitee会好很多。</p>
+<h2 id="参考资料及后话："><a href="#参考资料及后话：" class="headerlink" title="参考资料及后话："></a>参考资料及后话：</h2><p>在这里感谢一下以为师兄，搭建的时候手把手教了我并且原问题我马上找他，他也有求必应。因此，这篇博客大部分也是参考他的，这里贴一下他的原博客。</p>
+<p><a target="_blank" rel="noopener" href="https://www.luhawxem.com:4000/2021/01/22/MyFirstBlogArticle/">好心的草帽师兄</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty">CodeSheep的hexo博客搭建教程视频bilibili</a></p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo官方文档</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/04/10/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
