@@ -182,6 +182,438 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2021/04/18/stack/">stack(栈)</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/18/stack/">
+          
+          
+            
+          
+          栈规则：LIFO后入先出：Last in first out——LIFO
+实现&amp;操作：数组模拟：12345678910111213141516const int N=10000;//lengthint s[N];//for int,from s[1] to s[top]int top;//the last in-numbool isEmpty()&#123;return top==0;&#
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-18 15:48" pubdate>
+              2021-04-18
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ACM/">ACM</a>
+            
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+            
+              <a href="/tags/stack/">stack</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/18/vector/">vector(向量)</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/18/vector/">
+          
+          
+            
+          
+          向量相当于一个动态数组/可变长数组
+123456789101112#include&lt;vector&gt;std::vector&lt;Typename T&gt;v;//std::vector&lt;int&gt;v;int len=v.size();int x;v.push_back(x);v.pop_back();for(int i=v.begin();i&lt;=v.end();i++
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-18 15:48" pubdate>
+              2021-04-18
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ACM/">ACM</a>
+            
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+            
+              <a href="/tags/vector/">vector</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/18/queue/">queue(队列)</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/18/queue/">
+          
+          
+            
+          
+          队列规则：FIFO先入先出：First in first out——FIFO
+队列模拟：数组模拟队列：12345678910111213141516//由于进出是整体队列往数组右移，因此可以将数组视为环形缓冲区const int N=1000;int s[N];int head,tail;//头和尾指针（实际是下标）void isempty()&#123;return head==tail;&#1
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-18 15:47" pubdate>
+              2021-04-18
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ACM/">ACM</a>
+            
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+            
+              <a href="/tags/queue/">queue</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/18/binary-search/">二分&amp;三分</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/18/binary-search/">
+          
+          
+            
+          
+          二分&amp;三分二分简介：二分查找（英语：binary search），也称折半搜索（英语：half-interval search）、对数搜索（英语：logarithmic search），是用来在一个有序序列中查找某一元素的算法。
+二分是一种细节很多实现很容易出错的搜索算法。
+原理：以在一个升序数组中查找一个数为例。
+它每次考察数组当前部分的中间元素，如果中间元素刚好是要找的，就结束搜索过程
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-18 15:45" pubdate>
+              2021-04-18
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ACM/">ACM</a>
+            
+              <a href="/tags/%E7%AE%97%E6%B3%95Algorithm/">算法Algorithm</a>
+            
+              <a href="/tags/%E4%BA%8C%E5%88%86/">二分</a>
+            
+              <a href="/tags/%E4%B8%89%E5%88%86/">三分</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/18/greedy-algorithm/">贪心</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/18/greedy-algorithm/">
+          
+          
+            
+          
+          贪心贪心算法（英语：greedy algorithm）又称贪婪算法，是用计算机来模拟一个“贪心”的人做出决策的过程。这个人十分贪婪，每一步行动总是按某种指标选取最优的操作。而且他目光短浅，总是只看眼前，并不考虑以后可能造成的影响。
+可想而知，并不是所有的时候贪心法都能获得最优解，所以一般使用贪心法的时候，都要确保自己能证明其正确性。
+但是事实上在大多比赛的时候不会去很严谨的证明，所以这是个很玄学的
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-18 15:43" pubdate>
+              2021-04-18
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ACM/">ACM</a>
+            
+              <a href="/tags/%E7%AE%97%E6%B3%95Algorithm/">算法Algorithm</a>
+            
+              <a href="/tags/%E8%B4%AA%E5%BF%83/">贪心</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/18/sum-difference/">前缀和&amp;差分</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/18/sum-difference/">
+          
+          
+            
+          
+          前缀和&amp;差分前缀和前缀和是一种预处理，能减少查询复杂度，大致可以理解为序列的前n项和。即：$$sum[n]=sum(a[i]) (i&lt;=n)$$可以用来求区间和。如a[l,r]=sum[r]-sum[l-1]。
+STLc++标准库提供了 std::partial_sum函数，定义于头文件 &lt;numeric&gt; 中。
+假设要处理的序列为a，前缀和存储在arr中，那么有以下几种
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-18 15:42" pubdate>
+              2021-04-18
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ACM/">ACM</a>
+            
+              <a href="/tags/%E7%AE%97%E6%B3%95Algorithm/">算法Algorithm</a>
+            
+              <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">前缀和</a>
+            
+              <a href="/tags/%E5%B7%AE%E5%88%86/">差分</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/18/Divide-and-Conquer/">分治</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/18/Divide-and-Conquer/">
+          
+          
+            
+          
+          分治分治（英语：Divide and Conquer），字面上的解释是“分而治之”，就是把一个复杂的问题分成两个或更多的相同或相似的子问题，直到最后子问题可以简单的直接求解，原问题的解即子问题的解的合并。
+分治算法的核心思想就是“分而治之”。大概的流程可以分为三步：分解 -&gt; 解决 -&gt; 合并。
+分解原问题为结构相同的子问题。
+分解到某个容易求解的边界之后，进行递归求解。
+将子问题的解
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-18 15:40" pubdate>
+              2021-04-18
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ACM/">ACM</a>
+            
+              <a href="/tags/%E7%AE%97%E6%B3%95Algorithm/">算法Algorithm</a>
+            
+              <a href="/tags/%E5%88%86%E6%B2%BB/">分治</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/18/Recursion/">递归</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/18/Recursion/">
+          
+          
+            
+          
+          递归定义：递归（英语：Recursion），在数学和计算机科学中是指在函数的定义中使用函数自身的方法，在计算机科学中还额外指一种通过重复将问题分解为同类的子问题而解决问题的方法。
+递归的基本思想是某个函数直接或者间接地调用自身，这样原问题的求解就转换为了许多性质相同但是规模更小的子问题。求解时只需要关注如何把原问题划分成符合条件的子问题，而不需要过分关注这个子问题是如何被解决的。
+递归代码最重要的
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-18 15:37" pubdate>
+              2021-04-18
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ACM/">ACM</a>
+            
+              <a href="/tags/%E7%AE%97%E6%B3%95Algorithm/">算法Algorithm</a>
+            
+              <a href="/tags/%E9%80%92%E5%BD%92/">递归</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/18/PackDP/">背包dp问题</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/18/PackDP/">
+          
+          
+            
+          
+          具体见背包九讲
+前导：f-解决方案即状态，v-容量，c-物品体积即费用，w-物品价值，s-物品数量，k-物品类型，d-另一种费用，u-另一个容量
+总思路：循环物体-循环容量-循环决策初始化问题。要求恰好装满背包：
+123define fINF=0x3c3c3c3c  //fINF为负无穷std::memset(f,fINF,sizeof(f)); //其他fINFf[0]=0; //首位0
+
+不需
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-18 15:29" pubdate>
+              2021-04-18
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ACM/">ACM</a>
+            
+              <a href="/tags/%E7%AE%97%E6%B3%95Algorithm/">算法Algorithm</a>
+            
+              <a href="/tags/DP/">DP</a>
+            
+              <a href="/tags/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/">背包问题</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2021/04/17/Codeforces-Round-715-Div-2-2021-04-16/">CFR715(Div.2)2021.04.16</a>
       </h1>
 
@@ -220,220 +652,13 @@ A. Average Height题意：
     </article>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/16/GZHU2021week7/">广州大学ACM2021第七周训练2021.04.13</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/16/GZHU2021week7/">
-          
-          
-            
-          
-          广州大学ACM第七周训练链接：GZHUACM第七周闲话：开始记录的第一场训练赛。这场两点开始，当天补课（高数课旷不得）所以迟到了两个小时，不过前四题很友好，后面的写不了，所以其实也没差。（怎么还押韵了）我要丢掉百度的坏习惯。之前训练没有思路就百度一下题目类型往某个算法或者思维想，并且时不时百度算法模板。在这里提醒下自己，不能白白浪费这么好的机会。那么就开始吧。
-A - 1的个数（简单思维+二进制）
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-16 11:08" pubdate>
-              2021-04-16
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/ACM/">ACM</a>
-            
-              <a href="/tags/%E5%B9%BF%E5%B7%9E%E5%A4%A7%E5%AD%A6/">广州大学</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/16/Educational-Codeforces-Round-107-Rated-for-Div-2/">ECFR107(Div.2)2021.04.13</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/16/Educational-Codeforces-Round-107-Rated-for-Div-2/">
-          
-          
-            
-          
-          Educational Codeforces Round 107 (Rated for Div. 2)链接：Educational Codeforces Round 107 (Rated for Div. 2).闲话：这场打的时候室友在打游戏，加上当时有好几个作业没写，还迟到了十几分钟，心里慌得很想快点切几题去补作业。没想到bc题憋到嘴边出不来，那种要差一点就写出来的感觉可真难受，看到题目想了一会
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-16 11:01" pubdate>
-              2021-04-16
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/codeforces/">codeforces</a>
-            
-              <a href="/tags/ACM/">ACM</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/16/Codeforces-Round-714-Div-2-Editorial-2021-04-12/">CFR714(Div. 2)2021.04.12</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/16/Codeforces-Round-714-Div-2-Editorial-2021-04-12/">
-          
-          
-            
-          
-          链接：#714(div.2).开始记录cf的比赛，这是第一场。还不熟悉md格式，凑合写。由于现在菜的很，div123只能过A，不过为了养成好习惯，还是写一 写。（一题也行啊） 
-A. Array and Peaks（思维+构造）https://codeforces.com/contest/1513/problem/A链接: Array and Peaks.题意：给出整数n和k，将数字1~n排除某个
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-16 10:31" pubdate>
-              2021-04-16
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/codeforces/">codeforces</a>
-            
-              <a href="/tags/ACM/">ACM</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/14/How-to-creat-a-blog-using-hexo/">如何使用Hexo搭建一个自己的静态博客</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/14/How-to-creat-a-blog-using-hexo/">
-          
-          
-            
-          
-          如何使用Hexo搭建一个静态博客前言：hexo官网在这里：hexo
-hexo是一款简洁快速的博客框架，可以使用Makedown（或其他渲染引擎）解析文章。
-大一下，为了记录技术文章和刷题补题记录（还有其它乱七八糟的东西），我出生了搭建博客的想法，由于对各大博客框架不了解，选择了一位本校师兄推荐的hexo，在这里记录一下博客搭建的过程和遇到的一些问题。写此博客时参考了其它博客和视频，将会在文章末尾列
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-14 19:37" pubdate>
-              2021-04-14
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>
-            
-              <a href="/tags/hexo/">hexo</a>
-            
-              <a href="/tags/fluid/">fluid</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/10/hello-world/">Hello World</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/10/hello-world/">
-          
-          
-            
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-10 17:10" pubdate>
-              2021-04-10
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
 
 
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
 
 
 
