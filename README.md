@@ -1,4 +1,3 @@
 # violet-apricity.github.io
-我的Hexo博客
 
-此博客已废除弃用
+大一依靠hexo框架随便整的博客页，现已废用。
